@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
+import { Router } from '@angular/router';
 import { login } from '../shared/store/user.actions';
 
 @Component({
@@ -11,7 +12,11 @@ import { login } from '../shared/store/user.actions';
 export class LoginFormComponent implements OnInit {
   loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private store: Store) {
+  constructor(
+    private fb: FormBuilder,
+    private store: Store,
+    private router: Router
+  ) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(8)]],
@@ -24,6 +29,7 @@ export class LoginFormComponent implements OnInit {
     if (this.loginForm.valid) {
       //Dispatches the login action with the email
       this.store.dispatch(login({ email: this.loginForm.value.email }));
+      this.router.navigate(['/profile']);
     }
 
     //Resets the form to its initial state

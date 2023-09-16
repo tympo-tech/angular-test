@@ -10,9 +10,13 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from './app-routing.module';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginFormComponent],
+  declarations: [AppComponent, LoginFormComponent, LoginPageComponent, ProfilePageComponent],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
@@ -21,6 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    FlexLayoutModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
