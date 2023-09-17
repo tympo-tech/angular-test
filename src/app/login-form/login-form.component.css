@@ -12,6 +12,22 @@
     margin: 0 auto; 
 }
 
-.mat-form-field {
-    border-radius: 26px;
+#password {
+    border-radius: 16px;
+}
+
+.sign-in-btn {
+    cursor: pointer;
+    font-family: Nunito, sans-serif; 
+    font-weight: 700; 
+    font-size: 1rem; 
+    line-height: 1.75; 
+    letter-spacing: 0px; 
+    min-width: 64px; 
+    border-radius: 16px; 
+    color: rgb(41, 98, 255); 
+    width: 100%; 
+    padding: 16px 24px; 
+    height: 4rem;
+
 }

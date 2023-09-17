@@ -1,0 +1,11 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .logo-container {
+    padding: 16px;
+  }
+  
+  mat-icon {
+    margin-right: 8px;
+  }

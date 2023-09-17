@@ -14,9 +14,22 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { ProfileHeaderComponent } from './profile-header/profile-header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { NavigationComponent } from './navigation/navigation.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [AppComponent, LoginFormComponent, LoginPageComponent, ProfilePageComponent],
+  declarations: [
+    AppComponent,
+    LoginFormComponent,
+    LoginPageComponent,
+    ProfilePageComponent,
+    ProfileHeaderComponent,
+    NavigationComponent,
+  ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
@@ -25,6 +38,10 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    BrowserAnimationsModule,
     FlexLayoutModule,
     AppRoutingModule,
   ],

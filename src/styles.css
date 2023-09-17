@@ -1,5 +1,10 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* @import './my-custom-theme'; */
 
 body {
     font-family: 'Nunito', sans-serif;
+}
+
+.mat-mdc-text-field-wrapper {
+    border-radius: 16px;
 }
